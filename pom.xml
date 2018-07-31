@@ -37,12 +37,30 @@
 		</dependency>
 	</dependencies>
 
+    <scm>
+        <!--<url>https:</url>-->
+        <connection>scm:git:https://github.com/1NiKi/demoRestful.git</connection>
+        <developerConnection>scm:git:https://github.com/1NiKi/demoRestful.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+				<version>1.9.5</version>
+				<configuration>
+					<connectionType>developerConnection</connectionType>
+					<userName>1Niki</userName>
+					<passWord>15190315lml</passWord>
+				</configuration>
+            </plugin>
 		</plugins>
 	</build>
 
