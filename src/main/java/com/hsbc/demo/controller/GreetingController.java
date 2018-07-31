@@ -1,4 +1,7 @@
 package com.hsbc.demo.controller;
+import com.hsbc.demo.entity.Food;
+import com.hsbc.demo.entity.JsonModel;
+import com.hsbc.demo.entity.Product;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -10,32 +13,43 @@ import org.springframework.web.bind.annotation.*;
  * @Version 1.0
  **/
 @RestController
+@RequestMapping("/food/info")
 public class GreetingController {
 
- /*   @GetMapping("/greeting")
-    public Greeting greetings(){
-        return new Greeting(2,"Mike");
-    }*/
+   @PostMapping("/add")
+   public JsonModel addFood(){
+       Food food = new Food("1","木桶饭",12.6,"有点咸","http://XXX.com");
+       Product product = new Product("热销榜","1",food);
+       JsonModel jsonModel = new JsonModel("0","成功",product);
+       System.out.println(jsonModel);
+       return jsonModel;
+   }
 
-    @GetMapping("/put")
-    public String getRequest(){
-        return "This is a get mapping!";
-    }
-
-    @PutMapping("/put")
-    public String putRequest(){
-        return "This is a put mapping!";
-    }
+   @PutMapping("/update")
+   public JsonModel updateFood(){
+       Food food = new Food("2","西红柿炒蛋",15.6,"味道刚刚好","http://XX.com");
+       Product product = new Product( "家常榜","2",food);
+       JsonModel jsonModel = new JsonModel("0","成功",product);
+       System.out.println(jsonModel);
+       return jsonModel;
+   }
 
     @DeleteMapping("/delete")
-    public String deleteRequest(){
-        return "This is a delete mapping!";
+    public JsonModel deleteFood(){
+        Food food = new Food("3","皮蛋瘦肉粥",15.6,"有点儿咸","http://XX.com");
+        Product product = new Product( "家常榜","2",food);
+        JsonModel jsonModel = new JsonModel("0","成功",product);
+        System.out.println(jsonModel);
+        return jsonModel;
     }
 
-    @PostMapping("/post")
-    public String postRequest(){
-        return "This is a post mapping!";
+    @GetMapping("/query")
+    public JsonModel queryFood(){
+        Food food = new Food("4","小米粥",6.6,"味道挺好","http://XX.com");
+        Product product = new Product( "家常榜","2",food);
+        JsonModel jsonModel = new JsonModel("0","成功",product);
+        System.out.println(jsonModel);
+        return jsonModel;
     }
-
 }
 
