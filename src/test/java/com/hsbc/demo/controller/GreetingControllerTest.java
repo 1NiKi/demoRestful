@@ -1,8 +1,6 @@
 package com.hsbc.demo.controller;
 
-import com.hsbc.demo.entity.Food;
-import com.hsbc.demo.entity.JsonModel;
-import com.hsbc.demo.entity.Product;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

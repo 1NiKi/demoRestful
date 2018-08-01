@@ -1,3 +1,9 @@
 server:
   servlet:
     context-path: /maikun
+logging:
+  level: debug
+  path:
+  file: d:Project/Work
+  pattern:
+    console: "%d - %msg%n"

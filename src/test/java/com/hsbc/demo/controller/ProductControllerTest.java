@@ -27,8 +27,7 @@ public class ProductControllerTest {
 
     @Test
     public void list() {
-
-      /*  ProductInfoVO productInfoVO = new ProductInfoVO();
+        ProductInfoVO productInfoVO = new ProductInfoVO();
         productInfoVO.setProductId("1");
         productInfoVO.setProductName("燕麦粥");
         productInfoVO.setProductDescription("nice");
@@ -45,7 +44,6 @@ public class ProductControllerTest {
         resultVO.setCode(0);
         resultVO.setMsg("成功");
         resultVO.setData(productVO);
-*/
         Assert.assertEquals("1","1");
 
     }

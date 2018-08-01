@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * @Date:2018/8/1 13:40
  **/
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = ProductServiceImpl.class)
 public class ProductServiceImplTest {
 
     @Autowired
