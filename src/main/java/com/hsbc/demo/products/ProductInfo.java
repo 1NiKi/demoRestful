@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 
 /**
  * @ClassName ProductInfo
- * @Description:
+ * @Description: 商品详情
  * @Author: Niki
  * @Version 1.0
  * @Date:2018/8/1 10:34
@@ -44,16 +44,6 @@ public class ProductInfo {
 
     /** 类目. */
     private Integer categoryType;
-/*
-    public ProductInfo(String productId, String productName, BigDecimal productPrice, Integer productStock, String productDescription, String productIcon, Integer productStatus, Integer categoryType) {
-        this.productId = productId;
-        this.productName = productName;
-        this.productPrice = productPrice;
-        this.productStock = productStock;
-        this.productDescription = productDescription;
-        this.productIcon = productIcon;
-        this.productStatus = productStatus;
-        this.categoryType = categoryType;
-    }*/
+
 }
 
