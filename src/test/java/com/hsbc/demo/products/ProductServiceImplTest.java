@@ -9,7 +9,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
 
-import static org.junit.Assert.*;
 
 /**
  * @ClassName ProductServiceImplTest
@@ -18,8 +17,9 @@ import static org.junit.Assert.*;
  * @Version 1.0
  * @Date:2018/8/1 13:40
  **/
+
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ProductServiceImpl.class)
+@SpringBootTest
 public class ProductServiceImplTest {
 
     @Autowired
